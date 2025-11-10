@@ -23,10 +23,12 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Locations</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Clyde North</li>
-              <li>Cranbourne East</li>
-              <li>Officer</li>
-              <li>Pakenham</li>
+              <li>Mindarie</li>
+              <li>Eglinton</li>
+              <li>Brabham</li>
+              <li>Bushmead</li>
+              <li>Currambine</li>
+              <li>Piara Waters</li>
             </ul>
           </div>
 

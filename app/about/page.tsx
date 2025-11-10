@@ -17,10 +17,13 @@ export default function AboutPage() {
           <div className="bg-white rounded-lg shadow-md p-8 mb-8">
             <h2 className="text-3xl font-bold mb-4">Our Story</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Scott Park Group has been a trusted name in property development across Melbourne's growth corridor for over two decades. We specialize in creating high-quality house and land packages that combine exceptional design, premium finishes, and outstanding value.
+              Scott Park Group has been a trusted name in property development across Perth for over two decades. Through our two premier building brands, B1 Homes and 101 Residential, we specialize in creating high-quality house and land packages that combine exceptional design, premium finishes, and outstanding value.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Our commitment to excellence has helped thousands of families achieve their dream of home ownership. We understand that buying a home is one of life's biggest decisions, and we're dedicated to making the process as smooth and rewarding as possible.
+              B1 Homes focuses on affordable first home ownership with smart designs and quality inclusions, while 101 Residential specializes in impressive single and double storey homes that maximize every square metre. Together, our commitment to excellence has helped thousands of families achieve their dream of home ownership across Perth's most sought-after locations.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              We understand that buying a home is one of life's biggest decisions, and we're dedicated to making the process as smooth and rewarding as possible.
             </p>
           </div>
 

@@ -144,6 +144,11 @@ export default function PackageDetailPage({ params }: { params: { id: string } }
                 <p className="text-lg font-semibold text-gray-900">{pkg.location}</p>
               </div>
 
+              <div className="mb-6">
+                <p className="text-gray-600 text-sm mb-1">Builder</p>
+                <p className="text-lg font-semibold text-gray-900">{pkg.builder}</p>
+              </div>
+
               <div className="space-y-3">
                 <a
                   href="tel:1300123456"

@@ -15,7 +15,7 @@ export default function Home() {
               Find Your Dream Home
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-100">
-              Discover exceptional house and land packages across Melbourne's growth corridor
+              Discover exceptional house and land packages across Perth from B1 Homes and 101 Residential
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

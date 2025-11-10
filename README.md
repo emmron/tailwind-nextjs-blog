@@ -1,6 +1,6 @@
 # Scott Park Group - House and Land Packages Website
 
-A modern, responsive website built with Next.js 14 and Tailwind CSS showcasing house and land packages for Scott Park Group.
+A modern, responsive website built with Next.js 14 and Tailwind CSS showcasing real house and land packages from B1 Homes and 101 Residential, both part of the Scott Park Group.
 
 ## Features
 
@@ -76,14 +76,36 @@ tailwind-nextjs-blog/
 
 ## Package Data
 
-Package information is stored in `data/packages.ts` and includes:
+Real package information sourced from B1 Homes and 101 Residential websites is stored in `data/packages.ts` and includes:
+
+- **12 Real Packages** from actual Perth house and land offerings
 - Package name and type
-- Price and location
+- Real pricing from current market offerings
+- Perth suburb locations (Mindarie, Eglinton, Brabham, Bushmead, etc.)
 - Specifications (bedrooms, bathrooms, garages)
-- Land and house sizes
-- Features and inclusions
+- Land and house sizes in square meters
+- Features and inclusions from actual packages
+- Builder information (B1 Homes or 101 Residential)
 - Status (Available, Under Contract, Sold)
 - Images
+
+### Featured Locations
+
+- Mindarie (Coastal)
+- Eglinton (Coastal)
+- Brabham (North)
+- Bushmead (South East)
+- Currambine (North West)
+- Piara Waters (South)
+- Anketell (South)
+- Wembley Downs (Inner West)
+- Ellenbrook (North East)
+
+### Builders
+
+**B1 Homes**: Specializes in affordable first home ownership with quality inclusions and smart designs. Packages range from $614,999 to $797,490.
+
+**101 Residential**: Perth's leading two storey home builder, specializing in maximizing space on compact blocks. Packages range from $575,990 to $1,150,000.
 
 ## Customization
 
