@@ -45,6 +45,27 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the website.
 
+## Adding Builder Logos
+
+The website displays logos for the three Scott Park Group builders. To add the actual logo files:
+
+1. **Obtain the logos** from each builder's website:
+   - B1 Homes: https://b1homes.com.au/
+   - 101 Residential: https://www.101residential.com.au/
+   - Redink Homes: https://www.redinkhomes.com.au/
+
+2. **Save the logos** in `/public/logos/` directory with these exact filenames:
+   - `b1-homes-logo.png` (or `.svg`)
+   - `101-residential-logo.png` (or `.svg`)
+   - `redink-homes-logo.png` (or `.svg`)
+
+3. **Recommended specifications**:
+   - Format: PNG or SVG (transparent background preferred)
+   - Minimum width: 300px
+   - The website will automatically display them on the home page and about page
+
+See `/public/logos/README.md` for detailed instructions.
+
 ## Project Structure
 
 ```

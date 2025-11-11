@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function AboutPage() {
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -35,6 +37,77 @@ export default function AboutPage() {
             <p className="text-gray-700 leading-relaxed">
               To deliver exceptional house and land packages that exceed our customers' expectations while building vibrant, sustainable communities where families can thrive for generations to come.
             </p>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 className="text-3xl font-bold mb-6">Our Builders</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* B1 Homes */}
+              <div className="border-2 border-blue-200 rounded-lg p-6 hover:border-blue-400 transition-colors">
+                <div className="bg-blue-50 rounded-lg p-4 mb-4 h-24 flex items-center justify-center">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/logos/b1-homes-logo.png"
+                      alt="B1 Homes Logo"
+                      fill
+                      className="object-contain p-1"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">B1 Homes</h3>
+                <p className="text-sm text-gray-600 mb-2">First Home Specialists</p>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>• Affordable first home packages</li>
+                  <li>• Quality inclusions</li>
+                  <li>• Smart designs</li>
+                  <li>• $614,999 - $797,490</li>
+                </ul>
+              </div>
+
+              {/* 101 Residential */}
+              <div className="border-2 border-slate-200 rounded-lg p-6 hover:border-slate-400 transition-colors">
+                <div className="bg-slate-50 rounded-lg p-4 mb-4 h-24 flex items-center justify-center">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/logos/101-residential-logo.png"
+                      alt="101 Residential Logo"
+                      fill
+                      className="object-contain p-1"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">101 Residential</h3>
+                <p className="text-sm text-gray-600 mb-2">Two Storey Experts</p>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>• Leading two storey builder</li>
+                  <li>• Space-savvy designs</li>
+                  <li>• Compact block specialists</li>
+                  <li>• $575,990 - $1,150,000</li>
+                </ul>
+              </div>
+
+              {/* Redink Homes */}
+              <div className="border-2 border-red-200 rounded-lg p-6 hover:border-red-400 transition-colors">
+                <div className="bg-red-50 rounded-lg p-4 mb-4 h-24 flex items-center justify-center">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/logos/redink-homes-logo.png"
+                      alt="Redink Homes Logo"
+                      fill
+                      className="object-contain p-1"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Redink Homes</h3>
+                <p className="text-sm text-gray-600 mb-2">Custom Design Masters</p>
+                <ul className="text-sm text-gray-700 space-y-1">
+                  <li>• Award-winning designs</li>
+                  <li>• Home Builder of Year 2018</li>
+                  <li>• 21+ service awards</li>
+                  <li>• $377,990 - $950,000</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div className="bg-white rounded-lg shadow-md p-8">

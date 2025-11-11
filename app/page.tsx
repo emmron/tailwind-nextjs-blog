@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import PackageCard from '@/components/PackageCard'
 import { packages } from '@/data/packages'
 
@@ -30,6 +31,118 @@ export default function Home() {
               >
                 Contact Us
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Builders */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Premium Builders</h2>
+            <p className="text-xl text-gray-600">Three trusted brands, one commitment to excellence</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* B1 Homes */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-8 hover:shadow-xl transition-shadow">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-white rounded-lg p-6 mb-6 shadow-md w-full h-32 flex items-center justify-center">
+                  {/* B1 Homes Logo - Add b1-homes-logo.png to /public/logos/ */}
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/logos/b1-homes-logo.png"
+                      alt="B1 Homes Logo"
+                      fill
+                      className="object-contain p-2"
+                      onError={(e) => {
+                        // Fallback to text if logo not available
+                        e.currentTarget.style.display = 'none';
+                      }}
+                    />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">B1 Homes</h3>
+                <p className="text-gray-700 mb-4">
+                  Affordable first home ownership with quality inclusions and smart designs
+                </p>
+                <div className="text-sm text-gray-600 mb-4">
+                  <strong>Price Range:</strong> $614,999 - $797,490
+                </div>
+                <Link
+                  href="/packages"
+                  className="text-blue-600 font-semibold hover:text-blue-800 transition-colors"
+                >
+                  View B1 Homes Packages →
+                </Link>
+              </div>
+            </div>
+
+            {/* 101 Residential */}
+            <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-lg p-8 hover:shadow-xl transition-shadow">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-white rounded-lg p-6 mb-6 shadow-md w-full h-32 flex items-center justify-center">
+                  {/* 101 Residential Logo - Add 101-residential-logo.png to /public/logos/ */}
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/logos/101-residential-logo.png"
+                      alt="101 Residential Logo"
+                      fill
+                      className="object-contain p-2"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                      }}
+                    />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">101 Residential</h3>
+                <p className="text-gray-700 mb-4">
+                  Perth's leading two storey home builder, maximizing space on compact blocks
+                </p>
+                <div className="text-sm text-gray-600 mb-4">
+                  <strong>Price Range:</strong> $575,990 - $1,150,000
+                </div>
+                <Link
+                  href="/packages"
+                  className="text-slate-600 font-semibold hover:text-slate-800 transition-colors"
+                >
+                  View 101 Residential Packages →
+                </Link>
+              </div>
+            </div>
+
+            {/* Redink Homes */}
+            <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-lg p-8 hover:shadow-xl transition-shadow">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-white rounded-lg p-6 mb-6 shadow-md w-full h-32 flex items-center justify-center">
+                  {/* Redink Homes Logo - Add redink-homes-logo.png to /public/logos/ */}
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/logos/redink-homes-logo.png"
+                      alt="Redink Homes Logo"
+                      fill
+                      className="object-contain p-2"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                      }}
+                    />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">Redink Homes</h3>
+                <p className="text-gray-700 mb-4">
+                  Award-winning custom designs with architectural excellence since 2006
+                </p>
+                <div className="text-sm text-gray-600 mb-4">
+                  <strong>Price Range:</strong> $377,990 - $950,000
+                </div>
+                <Link
+                  href="/packages"
+                  className="text-red-600 font-semibold hover:text-red-800 transition-colors"
+                >
+                  View Redink Homes Packages →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
