@@ -1,9 +1,12 @@
+'use client'
+
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { getPackageById, packages } from '@/data/packages'
 import { notFound } from 'next/navigation'
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return packages.map((pkg) => ({
     id: pkg.id,
   }))
@@ -11,9 +14,21 @@ export async function generateStaticParams() {
 
 export default function PackageDetailPage({ params }: { params: { id: string } }) {
   const pkg = getPackageById(params.id)
+  const [selectedImage, setSelectedImage] = useState(0)
+  const [lightboxOpen, setLightboxOpen] = useState(false)
 
   if (!pkg) {
     notFound()
+  }
+
+  const allImages = pkg.images
+
+  const nextImage = () => {
+    setSelectedImage((prev) => (prev + 1) % allImages.length)
+  }
+
+  const prevImage = () => {
+    setSelectedImage((prev) => (prev - 1 + allImages.length) % allImages.length)
   }
 
   return (
@@ -35,30 +50,135 @@ export default function PackageDetailPage({ params }: { params: { id: string } }
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2">
-            {/* Image Gallery */}
+            {/* Enhanced Image Gallery */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
-              <div className="relative h-96">
+              {/* Main Image with Navigation */}
+              <div className="relative h-96 group">
                 <Image
-                  src={pkg.image}
-                  alt={pkg.name}
+                  src={allImages[selectedImage]}
+                  alt={`${pkg.name} - Image ${selectedImage + 1}`}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-opacity duration-300"
                   priority
                 />
+
+                {/* Navigation Arrows */}
+                <button
+                  onClick={prevImage}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                  aria-label="Previous image"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+
+                <button
+                  onClick={nextImage}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                  aria-label="Next image"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+
+                {/* Expand Button */}
+                <button
+                  onClick={() => setLightboxOpen(true)}
+                  className="absolute top-4 right-4 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                  aria-label="View fullscreen"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                  </svg>
+                </button>
+
+                {/* Image Counter */}
+                <div className="absolute bottom-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+                  {selectedImage + 1} / {allImages.length}
+                </div>
               </div>
-              <div className="grid grid-cols-3 gap-2 p-4">
-                {pkg.images.slice(1).map((img, idx) => (
-                  <div key={idx} className="relative h-32">
+
+              {/* Thumbnail Grid */}
+              <div className="grid grid-cols-4 gap-2 p-4">
+                {allImages.map((img, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setSelectedImage(idx)}
+                    className={`relative h-24 rounded overflow-hidden transition-all ${
+                      selectedImage === idx
+                        ? 'ring-4 ring-primary-500 scale-95'
+                        : 'hover:ring-2 hover:ring-primary-300 hover:scale-95'
+                    }`}
+                  >
                     <Image
                       src={img}
-                      alt={`${pkg.name} - Image ${idx + 2}`}
+                      alt={`${pkg.name} - Thumbnail ${idx + 1}`}
                       fill
-                      className="object-cover rounded"
+                      className="object-cover"
                     />
-                  </div>
+                  </button>
                 ))}
               </div>
             </div>
+
+            {/* Lightbox Modal */}
+            {lightboxOpen && (
+              <div
+                className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+                onClick={() => setLightboxOpen(false)}
+              >
+                <button
+                  onClick={() => setLightboxOpen(false)}
+                  className="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
+                  aria-label="Close lightbox"
+                >
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    prevImage()
+                  }}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full"
+                  aria-label="Previous image"
+                >
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+
+                <div className="relative w-full h-full max-w-6xl max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+                  <Image
+                    src={allImages[selectedImage]}
+                    alt={`${pkg.name} - Image ${selectedImage + 1}`}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    nextImage()
+                  }}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full"
+                  aria-label="Next image"
+                >
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full">
+                  {selectedImage + 1} / {allImages.length}
+                </div>
+              </div>
+            )}
 
             {/* Description */}
             <div className="bg-white rounded-lg shadow-md p-6 mb-8">

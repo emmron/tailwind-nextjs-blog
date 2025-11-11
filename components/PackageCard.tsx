@@ -9,17 +9,18 @@ interface PackageCardProps {
 export default function PackageCard({ package: pkg }: PackageCardProps) {
   return (
     <Link href={`/packages/${pkg.id}`}>
-      <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-        <div className="relative h-64">
+      <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+        <div className="relative h-64 overflow-hidden">
           <Image
             src={pkg.image}
             alt={pkg.name}
             fill
-            className="object-cover"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <div className="absolute top-4 right-4">
-            <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
+            <span className={`px-3 py-1 rounded-full text-sm font-semibold shadow-lg ${
               pkg.status === 'Available'
                 ? 'bg-green-500 text-white'
                 : pkg.status === 'Under Contract'
