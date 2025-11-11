@@ -47,7 +47,7 @@ export default function AboutPage() {
                 <div className="bg-blue-50 rounded-lg p-4 mb-4 h-24 flex items-center justify-center">
                   <div className="relative w-full h-full">
                     <Image
-                      src="/logos/b1-homes-logo.png"
+                      src="/logos/b1-homes-logo.svg"
                       alt="B1 Homes Logo"
                       fill
                       className="object-contain p-1"
@@ -69,7 +69,7 @@ export default function AboutPage() {
                 <div className="bg-slate-50 rounded-lg p-4 mb-4 h-24 flex items-center justify-center">
                   <div className="relative w-full h-full">
                     <Image
-                      src="/logos/101-residential-logo.png"
+                      src="/logos/101-residential-logo.svg"
                       alt="101 Residential Logo"
                       fill
                       className="object-contain p-1"
@@ -91,7 +91,7 @@ export default function AboutPage() {
                 <div className="bg-red-50 rounded-lg p-4 mb-4 h-24 flex items-center justify-center">
                   <div className="relative w-full h-full">
                     <Image
-                      src="/logos/redink-homes-logo.png"
+                      src="/logos/redink-homes-logo.svg"
                       alt="Redink Homes Logo"
                       fill
                       className="object-contain p-1"

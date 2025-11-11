@@ -52,14 +52,10 @@ export default function Home() {
                   {/* B1 Homes Logo - Add b1-homes-logo.png to /public/logos/ */}
                   <div className="relative w-full h-full">
                     <Image
-                      src="/logos/b1-homes-logo.png"
+                      src="/logos/b1-homes-logo.svg"
                       alt="B1 Homes Logo"
                       fill
                       className="object-contain p-2"
-                      onError={(e) => {
-                        // Fallback to text if logo not available
-                        e.currentTarget.style.display = 'none';
-                      }}
                     />
                   </div>
                 </div>
@@ -86,13 +82,10 @@ export default function Home() {
                   {/* 101 Residential Logo - Add 101-residential-logo.png to /public/logos/ */}
                   <div className="relative w-full h-full">
                     <Image
-                      src="/logos/101-residential-logo.png"
+                      src="/logos/101-residential-logo.svg"
                       alt="101 Residential Logo"
                       fill
                       className="object-contain p-2"
-                      onError={(e) => {
-                        e.currentTarget.style.display = 'none';
-                      }}
                     />
                   </div>
                 </div>
@@ -119,13 +112,10 @@ export default function Home() {
                   {/* Redink Homes Logo - Add redink-homes-logo.png to /public/logos/ */}
                   <div className="relative w-full h-full">
                     <Image
-                      src="/logos/redink-homes-logo.png"
+                      src="/logos/redink-homes-logo.svg"
                       alt="Redink Homes Logo"
                       fill
                       className="object-contain p-2"
-                      onError={(e) => {
-                        e.currentTarget.style.display = 'none';
-                      }}
                     />
                   </div>
                 </div>

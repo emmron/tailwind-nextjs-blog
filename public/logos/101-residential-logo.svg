@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" fill="none">
+  <!-- 101 text in bold -->
+  <text x="10" y="55" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#1a365d">101</text>
+
+  <!-- RESIDENTIAL text -->
+  <text x="110" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="1" fill="#2c5282">RESIDENTIAL</text>
+
+  <!-- Tagline -->
+  <text x="10" y="72" font-family="Arial, sans-serif" font-size="10" fill="#4a5568">TWO STOREY HOME BUILDERS</text>
+</svg>
