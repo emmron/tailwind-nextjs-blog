@@ -64,7 +64,7 @@ export default function Home() {
                   Affordable first home ownership with quality inclusions and smart designs
                 </p>
                 <div className="text-sm text-gray-600 mb-4">
-                  <strong>Price Range:</strong> $614,999 - $797,490
+                  <strong>Price Range:</strong> $614,999 - $845,000
                 </div>
                 <Link
                   href="/packages"
@@ -124,7 +124,7 @@ export default function Home() {
                   Award-winning custom designs with architectural excellence since 2006
                 </p>
                 <div className="text-sm text-gray-600 mb-4">
-                  <strong>Price Range:</strong> $377,990 - $950,000
+                  <strong>Price Range:</strong> $377,990 - $975,000
                 </div>
                 <Link
                   href="/packages"

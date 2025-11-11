@@ -60,7 +60,7 @@ export default function AboutPage() {
                   <li>• Affordable first home packages</li>
                   <li>• Quality inclusions</li>
                   <li>• Smart designs</li>
-                  <li>• $614,999 - $797,490</li>
+                  <li>• $614,999 - $845,000</li>
                 </ul>
               </div>
 
@@ -104,7 +104,7 @@ export default function AboutPage() {
                   <li>• Award-winning designs</li>
                   <li>• Home Builder of Year 2018</li>
                   <li>• 21+ service awards</li>
-                  <li>• $377,990 - $950,000</li>
+                  <li>• $377,990 - $975,000</li>
                 </ul>
               </div>
             </div>

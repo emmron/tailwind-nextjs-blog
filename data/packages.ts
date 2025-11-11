@@ -606,6 +606,369 @@ export const packages: Package[] = [
     ],
     status: 'Available',
     builder: 'Redink Homes'
+  },
+
+  // Additional B1 Homes Packages
+  {
+    id: '19',
+    name: 'The Davenport - Darch Display',
+    type: 'House & Land',
+    price: 845000,
+    location: 'Darch',
+    bedrooms: 4,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 400,
+    houseSize: 242,
+    description: 'Display home quality at Kinmore Green featuring dedicated games room and expansive living areas. Master positioned privately at the front with walk-in robe and luxury ensuite.',
+    features: [
+      'Dedicated games room',
+      'Spacious kitchen with large island',
+      'Walk-in pantry',
+      'Open-space living and dining',
+      'Expansive alfresco area',
+      'Activity room',
+      'Master with WIR and luxury ensuite',
+      'Three bedrooms at rear with activity room',
+      'Display home quality finishes',
+      'Located at Kinmore Green Darch'
+    ],
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800',
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800'
+    ],
+    status: 'Available',
+    builder: 'B1 Homes'
+  },
+  {
+    id: '20',
+    name: 'Lakelands Family Home',
+    type: 'House & Land',
+    price: 729000,
+    location: 'Lakelands',
+    bedrooms: 4,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 375,
+    houseSize: 230,
+    description: 'Perfect family home in the growing southern suburb of Lakelands. Close to schools, shopping centers, and recreational facilities.',
+    features: [
+      'Four generous bedrooms',
+      'Modern kitchen with stone benchtops',
+      'Open plan living and dining',
+      'Master with ensuite and WIR',
+      'Separate laundry',
+      'Alfresco entertaining area',
+      'Double garage with shoppers entry',
+      'Quality fixtures throughout',
+      'Close to Lakelands Shopping Centre',
+      'Family-friendly community'
+    ],
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+      'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800'
+    ],
+    status: 'Available',
+    builder: 'B1 Homes'
+  },
+
+  // Additional 101 Residential Packages
+  {
+    id: '21',
+    name: 'The Aspect - Treeby Display',
+    type: 'House & Land',
+    price: 895000,
+    location: 'Treeby',
+    bedrooms: 4,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 450,
+    houseSize: 265,
+    description: 'Bold modern two-storey design with distinctive sloping roofline. Display home featuring home office, master suite on ground floor, and three bedrooms upstairs with kids lounge.',
+    features: [
+      'Bold modern design with sloping roofline',
+      'Dedicated home office with custom shelving',
+      'Master suite on ground floor',
+      'Freestanding bath in ensuite',
+      'Three bedrooms upstairs',
+      'Cosy kids lounge area',
+      'Private balcony',
+      'Open plan living areas',
+      'Quality finishes throughout',
+      'Display home at 422 Torwood Avenue'
+    ],
+    image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800',
+      'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800',
+      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800'
+    ],
+    status: 'Available',
+    builder: '101 Residential'
+  },
+  {
+    id: '22',
+    name: 'The Como - Premium Family Home',
+    type: 'House & Land',
+    price: 1095000,
+    location: 'Various Perth Suburbs',
+    bedrooms: 5,
+    bathrooms: 3,
+    garages: 2,
+    landSize: 550,
+    houseSize: 310,
+    description: 'Grand 5 bedroom family home with flexible spaces and generous storage. Seamless indoor-outdoor living ideal for growing families and entertainers.',
+    features: [
+      'Five spacious bedrooms',
+      'Three luxurious bathrooms',
+      'Flexible living spaces',
+      'Generous storage throughout',
+      'Seamless indoor-outdoor living',
+      'Butler\'s pantry',
+      'Multiple living zones',
+      'Home theatre option',
+      'Premium kitchen with quality appliances',
+      'Perfect for entertainers'
+    ],
+    image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800',
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800'
+    ],
+    status: 'Available',
+    builder: '101 Residential'
+  },
+  {
+    id: '23',
+    name: 'Baldivis Two Storey Package',
+    type: 'House & Land',
+    price: 785000,
+    location: 'Baldivis',
+    bedrooms: 4,
+    bathrooms: 2.5,
+    garages: 2,
+    landSize: 400,
+    houseSize: 245,
+    description: 'Smart two-storey design maximizing compact block potential. Perfect for families wanting space without compromise.',
+    features: [
+      'Two storey space-savvy design',
+      'Four bedrooms with robes',
+      '2.5 bathrooms including powder room',
+      'Open plan living and dining',
+      'Modern kitchen with stone benchtops',
+      'Master with ensuite and WIR',
+      'Separate activity area upstairs',
+      'Double garage',
+      'Low maintenance yard',
+      'Close to Stockland Shopping Centre'
+    ],
+    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800',
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800'
+    ],
+    status: 'Available',
+    builder: '101 Residential'
+  },
+
+  // Additional Redink Homes Packages
+  {
+    id: '24',
+    name: 'Alkimos Beach - Compact Living',
+    type: 'House & Land',
+    price: 661000,
+    location: 'Alkimos',
+    bedrooms: 3,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 350,
+    houseSize: 190,
+    description: 'Affordable coastal living in sought-after Alkimos Beach. Smart design perfect for first home buyers or downsizers.',
+    features: [
+      'Affordable coastal location',
+      'Three bedrooms with robes',
+      'Two modern bathrooms',
+      'Open plan living',
+      'Modern kitchen with quality appliances',
+      'Master with ensuite',
+      'Double garage',
+      'Low maintenance design',
+      'Walk to beaches',
+      'Close to shops and amenities'
+    ],
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800',
+      'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800'
+    ],
+    status: 'Available',
+    builder: 'Redink Homes'
+  },
+  {
+    id: '25',
+    name: 'Alkimos Beach - Family Package',
+    type: 'House & Land',
+    price: 700990,
+    location: 'Alkimos',
+    bedrooms: 4,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 400,
+    houseSize: 225,
+    description: 'Stunning family home in prestigious Alkimos Beach. Quality design with architecturally driven features and coastal charm.',
+    features: [
+      'Four spacious bedrooms',
+      'Two stylish bathrooms',
+      'Architecturally driven design',
+      'Premium fixtures and fittings',
+      'Open plan living and dining',
+      'Modern kitchen with stone benchtops',
+      'Alfresco entertaining area',
+      'Master with luxury ensuite',
+      'Coastal location near beaches',
+      'Walk to parks and facilities'
+    ],
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800'
+    ],
+    status: 'Available',
+    builder: 'Redink Homes'
+  },
+  {
+    id: '26',
+    name: 'Alkimos Premium Package',
+    type: 'House & Land',
+    price: 766990,
+    location: 'Alkimos',
+    bedrooms: 4,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 420,
+    houseSize: 240,
+    description: 'Premium coastal package in Alkimos Beach estate. High ceilings, quality inclusions, and resort-style living.',
+    features: [
+      'Premium coastal location',
+      'High 31c ceilings',
+      'Four generous bedrooms',
+      'Two luxury bathrooms',
+      '20mm Essastone benchtops',
+      'Ducted air conditioning',
+      'Theatre or fifth bedroom option',
+      'Premium fixtures throughout',
+      'Landscaped gardens',
+      'Resort-style community'
+    ],
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+      'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800',
+      'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800'
+    ],
+    status: 'Available',
+    builder: 'Redink Homes'
+  },
+  {
+    id: '27',
+    name: 'Ellenbrook Value Package',
+    type: 'House & Land',
+    price: 687367,
+    location: 'Ellenbrook',
+    bedrooms: 3,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 375,
+    houseSize: 185,
+    description: 'Outstanding value in the established suburb of Ellenbrook. Perfect for first home buyers seeking quality and affordability.',
+    features: [
+      'Exceptional value for money',
+      'Three bedrooms with robes',
+      'Two modern bathrooms',
+      'Open plan living areas',
+      'Quality kitchen with modern appliances',
+      'Master with ensuite and WIR',
+      'Double garage',
+      'Low maintenance yard',
+      'Close to schools and shops',
+      'Established community'
+    ],
+    image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800',
+      'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800'
+    ],
+    status: 'Available',
+    builder: 'Redink Homes'
+  },
+  {
+    id: '28',
+    name: 'Ellenbrook Family Home',
+    type: 'House & Land',
+    price: 697000,
+    location: 'Ellenbrook',
+    bedrooms: 4,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 400,
+    houseSize: 220,
+    description: 'Well-designed family home in popular Ellenbrook. Quality features and convenient location near all amenities.',
+    features: [
+      'Four bedrooms with built-in robes',
+      'Two stylish bathrooms',
+      'Open plan kitchen and living',
+      'Stone benchtops throughout',
+      'Master suite with ensuite and WIR',
+      'Separate laundry',
+      'Alfresco area',
+      'Double car garage',
+      'Walk to shopping precinct',
+      'Family-friendly neighborhood'
+    ],
+    image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800'
+    ],
+    status: 'Available',
+    builder: 'Redink Homes'
+  },
+  {
+    id: '29',
+    name: 'The Quartz - Jindalee Display',
+    type: 'House & Land',
+    price: 975000,
+    location: 'Jindalee',
+    bedrooms: 4,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 450,
+    houseSize: 255,
+    description: 'Resort-style display home at Eden Beach. Inspired by coastal surroundings with high ceilings and open ensuite featuring white-washed timbers.',
+    features: [
+      'Resort-style living inspired design',
+      'High 34c ceilings to living areas',
+      'Open ensuite with white-washed timbers',
+      'Calm, light and bright throughout',
+      'Master suite with luxury features',
+      'Four generous bedrooms',
+      'Premium kitchen with quality appliances',
+      'Alfresco entertaining',
+      'Display home at Eden Beach',
+      'Coastal lifestyle location'
+    ],
+    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800',
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800',
+      'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=800'
+    ],
+    status: 'Available',
+    builder: 'Redink Homes'
   }
 ]
 
