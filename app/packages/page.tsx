@@ -9,7 +9,7 @@ export default function PackagesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">House & Land Packages</h1>
           <p className="text-xl text-primary-100">
-            Browse our complete collection of quality homes across Perth from B1 Homes and 101 Residential
+            Browse our complete collection of quality homes across Perth from B1 Homes, 101 Residential, and Redink Homes
           </p>
         </div>
       </section>

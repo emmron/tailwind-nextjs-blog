@@ -17,10 +17,13 @@ export default function AboutPage() {
           <div className="bg-white rounded-lg shadow-md p-8 mb-8">
             <h2 className="text-3xl font-bold mb-4">Our Story</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Scott Park Group has been a trusted name in property development across Perth for over two decades. Through our two premier building brands, B1 Homes and 101 Residential, we specialize in creating high-quality house and land packages that combine exceptional design, premium finishes, and outstanding value.
+              Scott Park Group has been a trusted name in property development across Perth for over two decades. Through our three premier building brands - B1 Homes, 101 Residential, and Redink Homes - we specialize in creating high-quality house and land packages that combine exceptional design, premium finishes, and outstanding value.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              B1 Homes focuses on affordable first home ownership with smart designs and quality inclusions, while 101 Residential specializes in impressive single and double storey homes that maximize every square metre. Together, our commitment to excellence has helped thousands of families achieve their dream of home ownership across Perth's most sought-after locations.
+              B1 Homes focuses on affordable first home ownership with smart designs and quality inclusions. 101 Residential specializes in impressive single and double storey homes that maximize every square metre. Redink Homes brings award-winning architecturally driven designs, having won Home Builder of the Year in 2018 and over 21 service awards for their custom home expertise.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Together, our three brands offer an unparalleled range of options - from affordable turnkey packages to custom architectural masterpieces. Our commitment to excellence has helped thousands of families achieve their dream of home ownership across Perth's most sought-after locations.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
               We understand that buying a home is one of life's biggest decisions, and we're dedicated to making the process as smooth and rewarding as possible.

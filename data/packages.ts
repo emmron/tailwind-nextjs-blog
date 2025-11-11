@@ -14,7 +14,7 @@ export interface Package {
   image: string
   images: string[]
   status: 'Available' | 'Sold' | 'Under Contract'
-  builder: 'B1 Homes' | '101 Residential'
+  builder: 'B1 Homes' | '101 Residential' | 'Redink Homes'
 }
 
 export const packages: Package[] = [
@@ -408,6 +408,204 @@ export const packages: Package[] = [
     ],
     status: 'Available',
     builder: '101 Residential'
+  },
+
+  // Redink Homes Packages
+  {
+    id: '13',
+    name: 'The Montebello - Catalina Estate',
+    type: 'House & Land',
+    price: 920000,
+    location: 'Mindarie',
+    bedrooms: 4,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 450,
+    houseSize: 245,
+    description: 'Stunning display home quality package at prestigious Catalina Estate. Award-winning architecturally driven design with coastal living at its finest.',
+    features: [
+      'Display home quality finishes',
+      'Architecturally driven design',
+      'Four generous bedrooms',
+      'Two stylish bathrooms',
+      'Gourmet kitchen with premium appliances',
+      'Open plan living and dining',
+      'Separate theatre room',
+      'Alfresco entertaining area',
+      'Coastal location near beaches',
+      'Walk to Catalina display village'
+    ],
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800',
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800'
+    ],
+    status: 'Available',
+    builder: 'Redink Homes'
+  },
+  {
+    id: '14',
+    name: 'The Dali - Catalina Display',
+    type: 'House & Land',
+    price: 950000,
+    location: 'Mindarie',
+    bedrooms: 4,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 475,
+    houseSize: 260,
+    description: 'Premium display home featuring chef\'s gourmet kitchen and resort-style living. Located at Portofino Promenade in the exclusive Catalina Estate.',
+    features: [
+      'Chef\'s gourmet kitchen',
+      'Premium 20mm Essastone benchtops',
+      'Separate theatre room',
+      'Alfresco entertaining area',
+      'Scullery with extra storage',
+      'Ducted air conditioning',
+      'High ceilings throughout',
+      'Quality fixtures and fittings',
+      'Display home at 16 Portofino Promenade',
+      'Master-planned coastal community'
+    ],
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+      'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800',
+      'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800'
+    ],
+    status: 'Available',
+    builder: 'Redink Homes'
+  },
+  {
+    id: '15',
+    name: 'Glades Estate Package - Byford',
+    type: 'House & Land',
+    price: 595000,
+    location: 'Byford',
+    bedrooms: 4,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 420,
+    houseSize: 225,
+    description: 'Quality family home in the popular Glades Estate, Byford. Open plan design with premium inclusions and choice of three stunning elevations.',
+    features: [
+      'Four bedrooms with robes',
+      'Open plan living layout',
+      '20mm Essastone benchtops',
+      'Ducted air conditioning',
+      'High ceilings',
+      'Choice of 3 premium elevations',
+      'Quality fixtures and fittings',
+      'Double garage',
+      'Family-friendly estate',
+      'Close to schools and shops'
+    ],
+    image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800',
+      'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800',
+      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800'
+    ],
+    status: 'Available',
+    builder: 'Redink Homes'
+  },
+  {
+    id: '16',
+    name: 'Baldivis Family Package',
+    type: 'House & Land',
+    price: 753990,
+    location: 'Baldivis',
+    bedrooms: 4,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 400,
+    houseSize: 240,
+    description: 'Complete family package in sought-after Baldivis. Features theatre room and scullery, perfect for modern family living.',
+    features: [
+      'Four spacious bedrooms',
+      'Two modern bathrooms',
+      'Home theatre room',
+      'Scullery with extra storage',
+      'Double car garage',
+      'Open plan living areas',
+      'Quality kitchen with modern appliances',
+      'Alfresco area',
+      'Great location near amenities',
+      'Family-friendly neighborhood'
+    ],
+    image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800'
+    ],
+    status: 'Available',
+    builder: 'Redink Homes'
+  },
+  {
+    id: '17',
+    name: 'Turnkey First Home Package',
+    type: 'House & Land',
+    price: 377990,
+    location: 'Various Perth Suburbs',
+    bedrooms: 3,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 350,
+    houseSize: 180,
+    description: 'Complete turnkey package - move in ready with no hidden extras. Perfect for first home buyers and FIFO workers. Includes carpet, vinyl plank flooring, and roller blinds.',
+    features: [
+      'Complete turnkey package',
+      'No hidden extras',
+      'Move-in ready',
+      'Carpet to bedrooms and theatre',
+      'Vinyl plank to living areas',
+      'Roller blinds included',
+      'Three bedrooms with robes',
+      'Two bathrooms',
+      'Double garage',
+      'First Home Owner Grant eligible'
+    ],
+    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800',
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800',
+      'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=800'
+    ],
+    status: 'Available',
+    builder: 'Redink Homes'
+  },
+  {
+    id: '18',
+    name: 'Custom Design Package - Aveley',
+    type: 'House & Land',
+    price: 685000,
+    location: 'Aveley',
+    bedrooms: 4,
+    bathrooms: 2,
+    garages: 2,
+    landSize: 400,
+    houseSize: 235,
+    description: 'Custom designed home in the growing suburb of Aveley. Redink\'s architectural expertise creates a unique home tailored to your lifestyle.',
+    features: [
+      'Custom architectural design',
+      'Four bedrooms with built-in robes',
+      'Two modern bathrooms',
+      'Open plan living and dining',
+      'Modern kitchen with quality appliances',
+      'Master suite with ensuite and WIR',
+      'Ducted air conditioning',
+      'Double garage',
+      'Premium fixtures and fittings',
+      'Growing family-friendly suburb'
+    ],
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800',
+    images: [
+      'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800',
+      'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800'
+    ],
+    status: 'Available',
+    builder: 'Redink Homes'
   }
 ]
 

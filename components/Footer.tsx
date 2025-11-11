@@ -27,8 +27,9 @@ export default function Footer() {
               <li>Eglinton</li>
               <li>Brabham</li>
               <li>Bushmead</li>
-              <li>Currambine</li>
-              <li>Piara Waters</li>
+              <li>Byford</li>
+              <li>Baldivis</li>
+              <li>Aveley</li>
             </ul>
           </div>
 

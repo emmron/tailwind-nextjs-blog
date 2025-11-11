@@ -76,16 +76,16 @@ tailwind-nextjs-blog/
 
 ## Package Data
 
-Real package information sourced from B1 Homes and 101 Residential websites is stored in `data/packages.ts` and includes:
+Real package information sourced from B1 Homes, 101 Residential, and Redink Homes websites is stored in `data/packages.ts` and includes:
 
-- **12 Real Packages** from actual Perth house and land offerings
+- **18 Real Packages** from actual Perth house and land offerings
 - Package name and type
 - Real pricing from current market offerings
-- Perth suburb locations (Mindarie, Eglinton, Brabham, Bushmead, etc.)
+- Perth suburb locations (Mindarie, Eglinton, Brabham, Bushmead, Byford, Baldivis, Aveley, etc.)
 - Specifications (bedrooms, bathrooms, garages)
 - Land and house sizes in square meters
 - Features and inclusions from actual packages
-- Builder information (B1 Homes or 101 Residential)
+- Builder information (B1 Homes, 101 Residential, or Redink Homes)
 - Status (Available, Under Contract, Sold)
 - Images
 
@@ -98,6 +98,9 @@ Real package information sourced from B1 Homes and 101 Residential websites is s
 - Currambine (North West)
 - Piara Waters (South)
 - Anketell (South)
+- Byford (South East)
+- Baldivis (South)
+- Aveley (North East)
 - Wembley Downs (Inner West)
 - Ellenbrook (North East)
 
@@ -106,6 +109,8 @@ Real package information sourced from B1 Homes and 101 Residential websites is s
 **B1 Homes**: Specializes in affordable first home ownership with quality inclusions and smart designs. Packages range from $614,999 to $797,490.
 
 **101 Residential**: Perth's leading two storey home builder, specializing in maximizing space on compact blocks. Packages range from $575,990 to $1,150,000.
+
+**Redink Homes**: Award-winning custom home builder established in 2006, known for architecturally driven designs. Winner of Home Builder of the Year 2018 and over 21 service awards. Offers turnkey packages starting from $377,990 and premium custom designs up to $950,000.
 
 ## Customization
 
